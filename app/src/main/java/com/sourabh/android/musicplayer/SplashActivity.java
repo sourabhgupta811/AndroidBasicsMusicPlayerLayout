@@ -37,7 +37,10 @@ public class SplashActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == songRequestCode && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            loadSongs();
+                loadSongs();
+        }
+        else{
+            finish();
         }
     }
 
