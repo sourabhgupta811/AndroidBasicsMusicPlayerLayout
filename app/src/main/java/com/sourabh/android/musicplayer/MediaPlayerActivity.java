@@ -24,6 +24,8 @@ public class MediaPlayerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_media_player);
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         albumArtImageView = findViewById(R.id.songAlbumArt);
         playButton = findViewById(R.id.play_button);
         songNameTextView = findViewById(R.id.songName);

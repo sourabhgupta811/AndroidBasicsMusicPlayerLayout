@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:descendantFocusability="blocksDescendants"
     android:paddingBottom="8dp">
 
@@ -26,7 +27,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:maxLines="2"
-        android:text="Daft Punk"
+        tools:text="Daft Punk"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintStart_toEndOf="@+id/albumArtImageView"
@@ -41,7 +42,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-light"
         android:maxLines="1"
-        android:text="The Weeknd ft Daft Punk"
+        tools:text="The Weeknd ft Daft Punk"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintStart_toEndOf="@+id/albumArtImageView"
@@ -57,7 +58,8 @@
         android:background="@drawable/ic_play"
         app:layout_constraintBottom_toBottomOf="@+id/albumArtImageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/albumArtImageView" />
+        app:layout_constraintTop_toTopOf="@+id/albumArtImageView"
+        android:contentDescription="@string/albumart" />
 
 
 </android.support.constraint.ConstraintLayout>
